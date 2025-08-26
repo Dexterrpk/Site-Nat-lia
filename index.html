@@ -3,198 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natália Taróloga | Leitura de Tarot e Orientação Espiritual</title>
-    <!-- Font Awesome para ícones -->
+    <title>Neri InfoTech - Especialista em Soluções Tecnológicas</title>
+    <meta name="description" content="Especialista em montagem gamer, formatação, consultoria técnica e soluções tecnológicas completas. Serviços de qualidade com preços justos.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Nosso CSS -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Agendar Consulta
-    </a>
-
     <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-img">
-                    <!-- Substitua pelo caminho da sua logo -->
-                    <img src="images/logo.png" alt="Logo Natália Taróloga">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Neri InfoTech Logo" class="logo-img">
                 </div>
-                <div class="logo-text">Natália <span>Taróloga</span></div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#precos" class="nav-link">Preços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="https://wa.me/5575999294419?text=Olá! Gostaria de solicitar um orçamento para serviços de tecnologia." class="cta-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Solicitar Orçamento
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Desvendando os mistérios do seu <span>destino</span> através das cartas</h1>
-                <p>Consultas de tarot online e presencial com a taróloga Natália. Descubra respostas para suas dúvidas e orientações para sua vida amorosa, profissional e espiritual.</p>
-                <a href="https://wa.me/5511999999999" target="_blank" class="btn">
-                    <i class="fab fa-whatsapp"></i> Consulta pelo WhatsApp
-                </a>
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="circuit-pattern"></div>
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
             </div>
-            <div class="hero-image">
-                <div class="profile-img">
-                    <!-- Substitua pelo caminho da foto de perfil -->
-                    <img src="images/profile.jpg" alt="Natália Taróloga">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Soluções Tecnológicas</span>
+                    <span class="title-line">que impulsionam</span>
+                    <span class="title-line highlight">seu desempenho</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Especialista em suporte técnico, formatação e montagem de computadores. 
+                    Mais de 500 clientes satisfeitos com serviços de qualidade e preço justo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5575999294419?text=Olá Cleiton! Vi seu site e gostaria de conversar sobre serviços de tecnologia." class="btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale Diretamente
+                    </a>
+                    <a href="#servicos" class="btn-secondary">
+                        <i class="fas fa-arrow-down"></i>
+                        Conhecer Serviços
+                    </a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Atendimento Rápido</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Orçamento Sem Compromisso</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Garantia nos Serviços</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-circle">
+                    <div class="circle-content">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="orbit orbit-1">
+                        <div class="orbit-item"><i class="fas fa-microchip"></i></div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="orbit-item"><i class="fas fa-memory"></i></div>
+                    </div>
+                    <div class="orbit orbit-3">
+                        <div class="orbit-item"><i class="fas fa-hdd"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="servicos">
+    <!-- Serviços -->
+    <section id="servicos" class="services">
         <div class="container">
-            <div class="section-title">
-                <h2>Serviços Espirituais</h2>
+            <div class="section-header">
+                <h2 class="section-title">Serviços Especializados</h2>
+                <p class="section-subtitle">Soluções completas para manter sua tecnologia em pleno funcionamento</p>
             </div>
-            
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-cards"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Leitura de Tarot</h3>
-                    <p>Consultas personalizadas para responder suas dúvidas e orientar sobre amor, trabalho, finanças e questões espirituais.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn">Agendar Consulta</a>
+                    <h3 class="service-title">Suporte Técnico</h3>
+                    <p class="service-description">
+                        Resolução de problemas e manutenção para computadores e notebooks. 
+                        Diagnóstico preciso e reparo eficiente para evitar novas falhas.
+                    </p>
+                    <ul class="service-features">
+                        <li>Diagnóstico completo de hardware/software</li>
+                        <li>Reparo e substituição de componentes</li>
+                        <li>Limpeza interna e externa</li>
+                        <li>Remoção de vírus e malware</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar um serviço de Suporte Técnico." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-star-and-crescent"></i>
+                        <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3>Mapa Astral</h3>
-                    <p>Análise completa do seu mapa astral para entender suas tendências, talentos, desafios e oportunidades.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn">Agendar Consulta</a>
+                    <h3 class="service-title">Formatação e Instalação</h3>
+                    <p class="service-description">
+                        Formatação profissional com backup dos seus dados e instalação 
+                        completa do sistema operacional e programas essenciais.
+                    </p>
+                    <ul class="service-features">
+                        <li>Backup seguro de arquivos importantes</li>
+                        <li>Instalação do Windows ou Linux</li>
+                        <li>Drivers atualizados e otimizados</li>
+                        <li>Pacote Office e programas essenciais</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar uma Formatação e Instalação." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-hand-sparkles"></i>
+                        <i class="fas fa-memory"></i>
                     </div>
-                    <h3>Limpeza Energética</h3>
-                    <p>Sessões para remover energias negativas e bloqueios que impedem seu crescimento e felicidade.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn">Agendar Consulta</a>
+                    <h3 class="service-title">Upgrades de Hardware</h3>
+                    <p class="service-description">
+                        Atualização de componentes para melhorar desempenho e velocidade. 
+                        Análise de compatibilidade e instalação profissional.
+                    </p>
+                    <ul class="service-features">
+                        <li>Instalação de SSD para boot rápido</li>
+                        <li>Ampliação de memória RAM</li>
+                        <li>Substituição de processador</li>
+                        <li>Placa de vídeo para games e design</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de consultar sobre Upgrades de Hardware." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="service-title">Consultoria Técnica</h3>
+                    <p class="service-description">
+                        Assessoria para escolha dos melhores equipamentos conforme 
+                        suas necessidades e orçamento. Análise técnica especializada.
+                    </p>
+                    <ul class="service-features">
+                        <li>Análise de necessidades específicas</li>
+                        <li>Recomendações técnicas personalizadas</li>
+                        <li>Orçamento detalhado de componentes</li>
+                        <li>Planejamento de upgrades futuros</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar uma Consultoria Técnica." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="service-title">Configuração de Redes</h3>
+                    <p class="service-description">
+                        Instalação e configuração de redes cabeadas e Wi-Fi para 
+                        residências e pequenos negócios. Melhoria de sinal e segurança.
+                    </p>
+                    <ul class="service-features">
+                        <li>Configuração de roteadores e modems</li>
+                        <li>Otimização de rede Wi-Fi</li>
+                        <li>Compartilhamento de impressoras</li>
+                        <li>Soluções de segurança digital</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar Configuração de Redes." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Montagem de Computadores</h3>
+                    <p class="service-description">
+                        Montagem personalizada de PCs para trabalho, estudos, games 
+                        ou entretenimento. Seleção criteriosa de componentes.
+                    </p>
+                    <ul class="service-features">
+                        <li>Seleção de componentes compatíveis</li>
+                        <li>Montagem profissional com cuidado</li>
+                        <li>Testes de stress e estabilidade</li>
+                        <li>Garantia na montagem e componentes</li>
+                    </ul>
+                    <div class="service-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de solicitar Montagem de Computador." class="service-link" target="_blank">
+                            Solicitar Agora
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="depoimentos">
+    <!-- Preços -->
+    <section id="precos" class="pricing">
         <div class="container">
-            <div class="section-title">
-                <h2>Depoimentos</h2>
+            <div class="section-header">
+                <h2 class="section-title">Investimento em Qualidade</h2>
+                <p class="section-subtitle">Preços transparentes para serviços de excelência</p>
             </div>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>A consulta com Natália foi incrível! Ela acertou situações que eu nem havia mencionado e me deu uma direção clara para resolver meus problemas.</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <!-- Imagem do cliente 1 -->
-                            <img src="images/client1.jpg" alt="Mariana Silva">
-                        </div>
-                        <div class="client-name">
-                            <h4>Mariana Silva</h4>
-                            <p>Cliente desde 2022</p>
-                        </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Formatação Completa</h3>
+                        <div class="price">R$ 80,00</div>
+                        <p class="pricing-description">Inclui backup, formatação e instalação</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Backup de arquivos pessoais</li>
+                        <li>Formatação e instalação do Windows</li>
+                        <li>Instalação de drivers atualizados</li>
+                        <li>Pacote Office e programas básicos</li>
+                        <li>Limpeza física interna</li>
+                        <li>Garantia de 30 dias</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar uma Formatação Completa." class="btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Serviço
+                        </a>
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
-                    <p>Nunca tinha feito uma leitura de tarot antes e fiquei impressionada com a precisão. Natália é uma profissional sensível e atenciosa.</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <!-- Imagem do cliente 2 -->
-                            <img src="images/client2.jpg" alt="Carolina Mendes">
-                        </div>
-                        <div class="client-name">
-                            <h4>Carolina Mendes</h4>
-                            <p>Cliente desde 2023</p>
-                        </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Manutenção Preventiva</h3>
+                        <div class="price">R$ 120,00</div>
+                        <p class="pricing-description">Combo completo de prevenção</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Limpeza interna completa</li>
+                        <li>Substituição de pasta térmica</li>
+                        <li>Organização de cabos</li>
+                        <li>Verificação de componentes</li>
+                        <li>Otimização do sistema</li>
+                        <li>Garantia de 60 dias</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de agendar uma Manutenção Preventiva." class="btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Serviço
+                        </a>
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
-                    <p>O mapa astral que Natália fez para mim abriu meus olhos para aspectos da minha personalidade que eu não compreendia. Recomendo muito!</p>
-                    <div class="client-info">
-                        <div class="client-img">
-                            <!-- Imagem do cliente 3 -->
-                            <img src="images/client3.jpg" alt="Roberto Almeida">
-                        </div>
-                        <div class="client-name">
-                            <h4>Roberto Almeida</h4>
-                            <p>Cliente desde 2021</p>
-                        </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Upgrade com SSD</h3>
+                        <div class="price">A partir de R$ 200,00</div>
+                        <p class="pricing-description">Inclui SSD e mão de obra</p>
                     </div>
+                    <ul class="pricing-features">
+                        <li>SSD de 240GB (valor à parte)</li>
+                        <li>Instalação profissional</li>
+                        <li>Clonagem do HD antigo</li>
+                        <li>Configuração de inicialização</li>
+                        <li>Otimização do sistema</li>
+                        <li>Garantia de 90 dias</li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="https://wa.me/5575999294419?text=Olá! Gostaria de consultar sobre Upgrade com SSD." class="btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-info">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Informações Adicionais</h4>
+                    <p>Os valores podem variar conforme a complexidade do serviço. Visitas técnicas possuem taxa adicional conforme localização. Aceitamos PIX, cartão de crédito e débito.</p>
+                </div>
+                
+                <div class="promo-card">
+                    <i class="fas fa-gift"></i>
+                    <h4>Pacotes Promocionais</h4>
+                    <p>Formatação + Limpeza: R$ 150,00</p>
+                    <p>Manutenção + Upgrade de RAM: Consulte valores</p>
+                    <a href="https://wa.me/5575999294419?text=Olá! Gostaria de conhecer seus pacotes promocionais." class="btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Conhecer Promoções
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="sobre">
+    <!-- Sobre -->
+    <section id="sobre" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-image">
-                    <div class="main-img">
-                        <!-- Imagem sobre a Natália -->
-                        <img src="images/about.jpg" alt="Sobre Natália Taróloga">
-                    </div>
-                    <div class="decoration"></div>
-                </div>
-                
                 <div class="about-text">
-                    <h2>Sobre Natália</h2>
-                    <p>Olá, eu sou Natália, taróloga e astróloga com mais de 10 anos de experiência. Minha jornada espiritual começou cedo, quando ainda criança sentia uma forte conexão com o mundo invisível que nos rodeia.</p>
-                    <p>Formada em psicologia, encontrei no tarot uma ferramenta poderosa para ajudar as pessoas a entenderem seus caminhos, superar desafios e encontrar seu propósito de vida.</p>
-                    <p>Meu trabalho é guiado pela ética, respeito e confidencialidade. Acredito que as cartas não determinam nosso futuro, mas nos mostram possibilidades e nos ajudam a fazer escolhas mais conscientes.</p>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="btn">Fale comigo pelo WhatsApp</a>
+                    <h2 class="section-title">Sobre a Neri InfoTech</h2>
+                    <p class="about-description">
+                        Com mais de 3 anos de experiência no mercado de tecnologia, ofereço soluções 
+                        práticas e eficientes para problemas computacionais. Meu foco está em entregar 
+                        serviços de qualidade com excelente custo-benefício, sempre priorizando a 
+                        satisfação do cliente e a transparência no atendimento.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">Computadores Reparados</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedicação</div>
+                        </div>
+                    </div>
+                    <div class="about-skills">
+                        <h3>Por que me escolher?</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="fas fa-bolt"></i> Atendimento Rápido</span>
+                            <span class="skill-tag"><i class="fas fa-shield-alt"></i> Garantia nos Serviços</span>
+                            <span class="skill-tag"><i class="fas fa-tools"></i> Ferramentas Profissionais</span>
+                            <span class="skill-tag"><i class="fas fa-dollar-sign"></i> Preço Justo</span>
+                            <span class="skill-tag"><i class="fas fa-clock"></i> Pontualidade</span>
+                            <span class="skill-tag"><i class="fas fa-star"></i> Qualidade Comprovada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-bg"></div>
+                        <div class="profile-content">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h4>Cleiton Neri</h4>
+                            <p>Técnico em Informática</p>
+                            <div class="profile-stats">
+                                <div class="profile-stat">
+                                    <span class="stat-value">3+</span>
+                                    <span class="stat-label">Anos de Experiência</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contato">
+    <!-- Contato -->
+    <section id="contato" class="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>Entre em Contato</h2>
+            <div class="section-header">
+                <h2 class="section-title">Pronto para resolver seus problemas?</h2>
+                <p class="section-subtitle">Entre em contato agora mesmo para um orçamento sem compromisso</p>
             </div>
-            
-            <div class="contact-container">
+            <div class="contact-content">
                 <div class="contact-info">
-                    <h2>Agende sua consulta</h2>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="contact-details">
                             <h4>WhatsApp</h4>
-                            <p>(11) 99999-9999</p>
+                            <p>Atendimento rápido e direto</p>
+                            <a href="https://wa.me/5575999294419?text=Olá Cleiton! Vi seu site e gostaria de conversar sobre serviços de tecnologia." target="_blank" class="contact-link">
+                                (75) 99929-4419
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>Acompanhe meus trabalhos</p>
+                            <a href="https://instagram.com/neriinfotech" target="_blank" class="contact-link">
+                                @neriinfotech
+                            </a>
                         </div>
                     </div>
                     
@@ -204,7 +452,10 @@
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>contato@nataliatarologa.com</p>
+                            <p>Para orçamentos detalhados</p>
+                            <a href="mailto:cleitonneri04@gmail.com" class="contact-link">
+                                cleitonneri04@gmail.com
+                            </a>
                         </div>
                     </div>
                     
@@ -213,27 +464,46 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4>Atendimento Presencial</h4>
-                            <p>Rua das Flores, 123 - São Paulo, SP</p>
+                            <h4>Área de Atendimento</h4>
+                            <p>Feira de Santana - BA e região</p>
+                            <span class="contact-link">
+                                Atendo a domicílio
+                            </span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <h3>Envie sua solicitação</h3>
+                    <form class="form">
                         <div class="form-group">
-                            <input type="text" placeholder="Seu nome" required>
+                            <input type="text" id="nome" name="nome" required>
+                            <label for="nome">Seu Nome</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Seu email" required>
+                            <input type="tel" id="telefone" name="telefone" required>
+                            <label for="telefone">Seu WhatsApp</label>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Seu WhatsApp" required>
+                            <select id="servico" name="servico" required>
+                                <option value=""></option>
+                                <option value="formatacao">Formatação</option>
+                                <option value="manutencao">Manutenção</option>
+                                <option value="upgrade">Upgrade</option>
+                                <option value="montagem">Montagem</option>
+                                <option value="rede">Configuração de Rede</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <label for="servico">Tipo de Serviço</label>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Sua mensagem" required></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            <label for="mensagem">Descreva seu problema ou necessidade</label>
                         </div>
-                        <button type="submit" class="btn">Enviar Mensagem</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Solicitação
+                        </button>
                     </form>
                 </div>
             </div>
@@ -241,52 +511,63 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <div class="logo-text">Natália <span>Taróloga</span></div>
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Neri InfoTech Logo" class="footer-logo-img">
                     </div>
-                    <p>Consultas de tarot e orientação espiritual para ajudar você a encontrar seu caminho e tomar decisões mais conscientes.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <p class="footer-description">
+                        Soluções tecnológicas com qualidade, transparência e preço justo.
+                    </p>
+                    <div class="footer-payment">
+                        <h4>Formas de Pagamento</h4>
+                        <div class="payment-methods">
+                            <span>PIX</span>
+                            <span>Cartão</span>
+                            <span>Dinheiro</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="footer-links">
-                    <h3>Links Rápidos</h3>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Formatação</a></li>
+                        <li><a href="#servicos">Manutenção</a></li>
+                        <li><a href="#servicos">Upgrades</a></li>
+                        <li><a href="#servicos">Montagem</a></li>
+                        <li><a href="#servicos">Redes</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-links">
-                    <h3>Serviços</h3>
-                    <ul>
-                        <li><a href="#">Leitura de Tarot</a></li>
-                        <li><a href="#">Mapa Astral</a></li>
-                        <li><a href="#">Limpeza Energética</a></li>
-                        <li><a href="#">Terapia de Vidas Passadas</a></li>
-                        <li><a href="#">Cursos de Tarot</a></li>
+                <div class="footer-section">
+                    <h4>Contato Rápido</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/5575999294419" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="https://instagram.com/neriinfotech" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="mailto:cleitonneri04@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
                     </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horário de Atendimento</h4>
+                    <div class="footer-schedule">
+                        <p>Segunda a Sexta: 8h às 18h</p>
+                        <p>Sábado: 8h às 12h</p>
+                        <p>Plantão para emergências</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2023 Natália Taróloga. Todos os direitos reservados.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Neri InfoTech - Todos os direitos reservados.</p>
+                <p>Feira de Santana - BA</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
